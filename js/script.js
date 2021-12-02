@@ -4,6 +4,8 @@ buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
 
+
+
 /**
  * Describe this function...
  */
@@ -47,7 +49,6 @@ function getMoveName(argMoveId) {
 	printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
   }
 
-  console.log('wybór ruchu gracza to: ' + playerInput);
   playerMove = argButtonName;
   console.log('ruch gracza to: ' + playerMove);
   randomNumber = Math.floor(Math.random() * 3 + 1);
