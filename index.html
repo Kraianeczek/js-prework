@@ -3,17 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=M+PLUS+1+Code&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">   
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<h1>Kamień, papier, nożyceee...</h1>
+		<h1>Kamień, papier, nożyce...</h1>
+		<h2>Zagrajmy w grę...</h2>
 		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
+			<button id="button-rock" class="btn-secondary">Kamień</button>
+			<button id="button-paper" class="btn-light">Papier</button>
+			<button id="button-scissors" class="btn-danger">Nożyce</button>
 		</div>
 		<div id="messages"></div>
+		<div id="results"></div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
