@@ -10,10 +10,9 @@ buttonScissors = document.getElementById('button-scissors');
  * Describe this function...
  */
 
- let argButtonName; 
- 
+
 function buttonClicked(argButtonName) {
-	let argComputerMove, argMoveId, argPlayerMove;
+	let computerMove;
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
