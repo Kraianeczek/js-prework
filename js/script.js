@@ -2,6 +2,9 @@ buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
 
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyczki'); });
 
 
 /**
@@ -9,7 +12,7 @@ buttonScissors = document.getElementById('button-scissors');
  */
 
 function buttonClicked(argButtonName) {
-	let computerMove, playerMove, randomNumber, buttonPaper, buttonRock, buttonScissors;
+	let computerMove, playerMove, randomNumber;
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
@@ -57,7 +60,3 @@ function getMoveName(argMoveId) {
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 }
-
-buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-buttonScissors.addEventListener('click', function(){ buttonClicked('nożyczki'); });
