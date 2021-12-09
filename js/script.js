@@ -15,7 +15,7 @@ function buttonClicked(argButtonName) {
 	let computerMove, playerMove, randomNumber;
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-
+}
   /**
  * Describe this function...
  */
@@ -59,4 +59,4 @@ function getMoveName(argMoveId) {
   computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
-}
+
